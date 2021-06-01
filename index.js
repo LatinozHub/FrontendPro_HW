@@ -15,83 +15,116 @@
 # - использовать if else или switch case для вызова необходимой функции. 
 */
 
-let arr = [];
-// let string = prompt("Enter string", "Default");
-// let number = prompt("Enter number", "5");
-// let typeNull = prompt("Enter typeNull", "null");
-// let boolean = prompt("Enter boolean");
-// let bigInt = prompt("Enter bigInt");
-// let symbol = prompt("Enter symbol");
 
 
-let typeString = prompt("Enter yout string");
-function addString(argString) {
-    arr.push(String(argString));
+
+
+
+// let arr = [];
+
+// function addString(argString) {
+//     arr.push(String(argString));
+// };
+
+
+// function addNumber(argNubmer) {
+//     arr.push(Number(argNubmer));
+// };
+
+
+// function addNull(argNull) {
+//     arr.push(argNull);
+// };
+
+
+// function addBigInt(argBigInt) {
+//     arr.push(BigInt(argBigInt));
+// };
+
+
+// function addBoolean(argBoolean) {
+//     arr.push(Boolean(argBoolean));
+// };
+
+
+// function addSymbol(argSymbol) {
+//     arr.push(Symbol(argSymbol));
+// };
+
+// function addUndefined() {
+//     arr.push(undefined);
+// };
+
+// function addObject() {
+//     arr.push({
+//         first: 'joker', 
+//         second: 'batman',
+//     });
+// };
+
+// while(arr.length < 8) {
+//     let type = prompt("Add your type");
+//     let action = prompt("Action");
+//     switch(action) {
+//         case "string": 
+//             addString(type);
+//             break;
+//         case "number":
+//             addNumber(type);
+//             break;
+//         case "Null":
+//             addNull(type);
+//             break;
+//         case "bigInt":
+//             addBigInt(type);
+//             break;
+//         case "boolean":
+//             addBoolean(type);
+//             break;
+//         case "symbol":
+//             addSymbol(type);
+//             break;
+//         case "undefined":
+//             addUndefined();
+//             break;
+//         case "object":
+//             addObject();
+//             break;     
+//         default: console.log("text");           
+//     };
+// };
+// console.log("array", arr);
+
+
+
+
+let first = Number(prompt("Enter first number"));
+let second = Number(prompt("Enter second number"));
+let action = prompt("Enter your action");
+
+function plus(first, second) {
+    let result = first + second;
+    console.log("plus", result);
 };
 
-let typeNumber = prompt("Enter your number");
-function addNumber(argNubmer) {
-    arr.push(Number(argNubmer));
+function minus(first, second) {
+    let result = first - second;
+    console.log("minus", result);
 };
 
-let enterNull = prompt("Enter Null");
-function addNull(argNull) {
-    arr.push(argNull);
+function multiplication(first, second) {
+    let result = first * second;
+    console.log("multiplication", result);
 };
 
-let typeBigInt = prompt("Enter your BigInt");
-function addBigInt(argBigInt) {
-    arr.push(BigInt(argBigInt));
+function division(first, second) {
+    let result = first / second;
+    console.log("division", result);
 };
 
-let typeBoolean = prompt("Enter your Boolean");
-function addBoolean(argBoolean) {
-    arr.push(Boolean(argBoolean));
+function modulDivision(first, second) {
+    let result = first % second;
+    console.log("modulDivision", result);
 };
 
-let typeSymbol = prompt("Enter your Symbol");
-function addSymbol(argSymbol) {
-    arr.push(Symbol(argSymbol));
-};
-
-function addUndefined() {
-    arr.push(undefined);
-};
-
-function addObject() {
-    arr.push({
-        first: 'joker', 
-        second: 'batman',
-    });
-};
-
-while(arr.length < 8) {
-    let action = prompt("Action");
-    switch(action) {
-        case "string": 
-            addString(typeString);
-            brake;
-        case "nubmer":
-            addNumber(typeNumber);
-            brake;
-        case "Null":
-            addNull(enterNull);
-            brake;
-        case "bigInt":
-            addBigInt(typeBigInt);
-            brake;
-        case "boolean":
-            addBoolean(typeBoolean);
-            brake;
-        case "symbol":
-            addSymbol(typeSymbol);
-            brake;
-        case "undefined":
-            addUndefined();
-            brake;
-        case "object":
-            addObject();
-            brake;     
-        default: console.log("text");           
-    };
-};
+plus(first, second);
